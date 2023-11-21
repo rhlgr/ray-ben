@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+
+}
+.back{
+    width: 100%;
+    height: 100vh;
+
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.workingArea{
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    margin:0 auto;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img{
+    height: 80px;
+}
+.Nleft,.Nright{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav a{
+    pointer-events: all;
+    color: white;
+    font-family: gilroy;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0% , -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.heroleft{
+    min-width: 50%;
+
+}
+.heroleft .elem{
+    height: 6vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+}
+.heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family:"gilroy";
+    color: white;
+    font-weight: 900;
+    font-size: 6vw;
+}
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+.heroright{
+    width: 25%;
+color: white;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+}
+.heroright .imgdiv{
+width: 100%;
+height: 150px;
+background-color: brown;
+background-image: url("https://images.unsplash.com/photo-1611558709798-e009c8fd7706?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 40px;
+}
+.heroright p{
+    text-align: right;
+    margin-bottom: 40px;
+}
+.heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
+.heroleft button{
+    pointer-events: all;
+    padding:1vw 4vw;
+    font-size: 1.2vw;
+margin-top: 2vw;
+}
